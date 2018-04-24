@@ -1,14 +1,18 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TouchableNativeFeedback } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+
+import Drawer from './Drawer'
 
 const Header = (props) => {
    const { viewStyle, headerView, iconView, textStyle } = styles
    return (
       <View style={headerView}>
-        <View style={iconView}>
-          <Icon name="menu" size={30} color="#000" />
-        </View>
+        <TouchableNativeFeedback onPress={() => Drawer.openDrawer()}>
+          <View style={iconView}>
+            <Icon name="menu" size={30} color="#000" />
+          </View>
+        </TouchableNativeFeedback>
         <View style={viewStyle}>
           <Text style={textStyle}>Albums</Text>
         </View>
