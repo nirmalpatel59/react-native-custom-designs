@@ -2,10 +2,10 @@ import React from 'react';
 import { Text, View, TouchableNativeFeedback } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import Drawer from './Drawer'
+import Drawer from './Drawer';
 
-const Header = (props) => {
-   const { viewStyle, headerView, iconView, textStyle } = styles
+const Header = () => {
+   const { viewStyle, headerView, iconView, textStyle } = styles;
    return (
       <View style={headerView}>
         <TouchableNativeFeedback onPress={() => Drawer.openDrawer()}>
@@ -16,11 +16,10 @@ const Header = (props) => {
         <View style={viewStyle}>
           <Text style={textStyle}>Albums</Text>
         </View>
-        <View style={iconView}>
-        </View>
+        <View style={iconView} />
       </View>
-    )
- }
+    );
+ };
 
 const styles = {
   headerView: {
@@ -48,5 +47,5 @@ const styles = {
   textStyle: {
     fontSize: 20
   }
-}
-export default Header
+};
+export default Header;

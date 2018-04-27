@@ -1,3 +1,6 @@
+use node 6.3.0
+android/app/build.gradle to integrate vector icons
+
 not able found host-only adapter in network settings of virtualbox
 where is virtualbox
  1993  whereis virtualbox
