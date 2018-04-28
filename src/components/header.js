@@ -3,6 +3,7 @@ import { Text, View, TouchableNativeFeedback } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import Drawer from './Drawer';
+import { theme } from '../utitlities/color-palette';
 
 const Header = () => {
    const { viewStyle, headerView, iconView, textStyle } = styles;
@@ -10,7 +11,7 @@ const Header = () => {
       <View style={headerView}>
         <TouchableNativeFeedback onPress={() => Drawer.openDrawer()}>
           <View style={iconView}>
-            <Icon name="menu" size={30} color="#000" />
+            <Icon name="menu" size={30} color={theme.primary.fontColor} />
           </View>
         </TouchableNativeFeedback>
         <View style={viewStyle}>
@@ -23,7 +24,7 @@ const Header = () => {
 
 const styles = {
   headerView: {
-    backgroundColor: '#f8f8f8',
+    backgroundColor: theme.primary.bgNormal,
     // justifyContent: 'center',
     alignItems: 'center',
     height: 60,
@@ -45,7 +46,8 @@ const styles = {
     justifyContent: 'center'
   },
   textStyle: {
-    fontSize: 20
+    fontSize: 24,
+    color: theme.primary.fontColor
   }
 };
 export default Header;
