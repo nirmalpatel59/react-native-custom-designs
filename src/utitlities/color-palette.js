@@ -13,10 +13,7 @@ const colorPalette = {
   } 
 };
 
-const theme = {
-  primary: colorPalette.GREEN,
+export const theme = {
+  primary: colorPalette.DEEP_PURPLE,
   secondary: colorPalette.DEEP_PURPLE, 
 };
-
-
-module.exports.theme = theme;

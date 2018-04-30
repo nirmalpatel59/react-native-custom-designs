@@ -28,3 +28,9 @@ npm install -g yo generator-rn-toolbox
 yo rn-toolbox:assets --icon <path to your icon>
 # For instance
 yo rn-toolbox:assets --icon ../icon.png
+
+Font 
+Primary = 16 opacity = 0.87 color = black/white
+Secondary = 14 opacity = 0.54 color = black/white
+
+
