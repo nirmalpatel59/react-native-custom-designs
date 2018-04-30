@@ -21,3 +21,10 @@ adb devices
 adb install filename.apk
 
 https://facebook.github.io/react-native/docs/signed-apk-android.html
+
+
+https://medium.com/bam-tech/generate-your-react-native-app-icons-in-a-single-command-line-145af2e329b2
+npm install -g yo generator-rn-toolbox
+yo rn-toolbox:assets --icon <path to your icon>
+# For instance
+yo rn-toolbox:assets --icon ../icon.png
